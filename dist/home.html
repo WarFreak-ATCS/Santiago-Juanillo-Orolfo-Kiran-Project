@@ -8,6 +8,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
 
     <link rel="stylesheet" href="./output.css" />
   </head>
@@ -16,12 +17,44 @@
     <header class="header"></header>
 
     <!-- BANNER -->
-    <section class="banner"></section>
+    <section class="banner">
+        <div class="banner__wrapper text-center text-white">
+            <div class="slider__controls text-[1.5rem] absolute top-[16rem] cursor-pointer">
+                <i class="fa-solid fa-chevron-left prev relative bg-tertiary px-3 py-2 left-[1rem] z-10"></i>
+                <i class="fa-solid fa-chevron-right next relative bg-tertiary px-3 py-2 left-[25rem] z-10"></i>
+            </div>
+            <div class="banner__slider">
+                <div class="banner__items h-fit max-h-fit">
+                <img src="../IMG/slider1.jpg" alt="" class="h-[40rem] brightness-75">
+                <div class="banner__items--text flex flex-col justify-center items-center gap-10 relative bottom-[30rem] px-6">
+                    <h2 class="text-3xl font-semibold">GOD IS IN NATURE, LOVE IT</h2>
+                    <p class="text-[18px]">
+                        typically consisting of alphabetic and numeric characters,
+                        between two or more users mobile devices, desktops/laptops
+                    </p>
+                    <a href="" class="btn straight">DONATION</a>
+                </div>
+            </div>
+            <div class="banner__items h-fit max-h-fit">
+                <img src="../IMG/slider2.jpg" alt="" class="h-[40rem] brightness-75 w-[47rem]">
+                <div class="banner__items--text flex flex-col justify-center items-center gap-10 relative bottom-[30rem] px-6">
+                    <h2 class="text-3xl font-semibold">Love the Lord Your God with All Your Heart</h2>
+                    <p class="text-[18px]">
+                        typically consisting of alphabetic and numeric characters,
+                        between two or more users mobile devices, desktops/laptops
+                    </p>
+                    <a href="" class="btn straight">DONATION</a>
+                </div>
+            </div>
+            </div>
+            
+        </div>
+    </section>
 
     <!-- HISTORY -->
-    <section class="history pt-14 pb-20">
+    <section class="history pb-20 -translate-y-56">
         <div class="container">
-            <div class="history__wrapper mx-6">
+            <div class="history__wrapper">
                 <div class="history__text leading-8 text-lightgray">
                     <div class="history__title">
                         <h3 class="text-3xl font-semibold mb-3 text-black">History About Us</h3>
@@ -126,7 +159,6 @@
         </div>
       </div>
     </section> -->
-
     <!-- TESTIMONIAL -->
     <section class="testimonial"></section>
 
@@ -134,5 +166,9 @@
           <footer class="footer">
             
           </footer>
+          <script src="./js/controls.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+          <script src="./js/slider.js"></script>
+          
 </body>
 </html>

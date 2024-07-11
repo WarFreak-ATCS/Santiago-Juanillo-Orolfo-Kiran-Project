@@ -9,6 +9,9 @@
     body{
         @apply font-dosis;
     }
+    .container {
+        @apply max-w-[1600px] w-full px-4 mx-auto;
+    }
     /* BLOG */
     .blog {
         @apply bg-bgcolor;
@@ -65,7 +68,21 @@
      .history__text {
         @apply max-w-[32rem]
      }
-
+     /* banner */
+     .banner__items img {
+        @apply 
+        /* desktop */
+        lg:w-full;
+     }
+     .slider__controls {
+        @apply opacity-0 transition-opacity ease-linear duration-300;
+     }
+     .slider__controls.open {
+        @apply opacity-100 transition-opacity ease-linear duration-300;
+     }
+      .slider__controls i {
+        @apply hover:bg-accent;
+    }
 }
 
 @layer components {
@@ -100,7 +117,7 @@ h1,h2,h3,h4,h5,h6 {
         @apply bg-tertiary p-2 text-center text-white font-bold tracking-wider;
     }
     .btn.straight {
-        @apply bg-tertiary py-4 px-10 text-center text-white font-bold tracking-wider rounded-none;
+        @apply bg-tertiary py-4 px-10 text-center text-white font-bold tracking-wider rounded-none hover:bg-accent transition-colors ease-in-out duration-300;
     }
 
 }
