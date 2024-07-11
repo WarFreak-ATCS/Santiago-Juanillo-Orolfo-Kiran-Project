@@ -9,6 +9,50 @@
     body{
         @apply font-dosis overflow-hidden;
     }
+    /* BLOG */
+    .blog {
+        @apply bg-bgcolor;
+    }
+    .blog__wrapper {
+        @apply py-10 px-3 flex flex-col gap-5;
+    }
+    .blog__title h3 {
+        @apply font-dosis text-dark font-bold pb-3 text-[2rem];
+    }
+    .blog__title p {
+        @apply text-[1rem];
+    }
+
+    /* BLOG SLIDER */
+    .blog__card {
+        @apply flex flex-col;
+    }
+    .blog__date {
+        @apply flex flex-col text-light;
+    }
+    .blog__day {
+        @apply text-[2rem] bg-tertiary max-w-14 justify-center;
+    }
+    .blog__month {
+        @apply text-[1rem] bg-accent max-w-14 justify-center;
+     }
+     .blog__icons {
+        @apply text-[0.8rem] flex flex-row; 
+     }
+     .blog__icons i {
+        @apply text-tertiary p-1;
+     }
+     .blog__icons a {
+        @apply text-lightgray hover:text-accent;
+     }
+     .blog__card-text h3{
+        @apply text-[1.5rem] font-bold;
+     }
+     .blog__card-text p {
+        @apply text-lightgray pb-10
+     }
+
+
 }
 
 @layer components {
