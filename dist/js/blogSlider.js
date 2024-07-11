@@ -1,7 +1,14 @@
 
 var slider = tns({
-  container: '.my-slider',
-  items: 3,
+  container: '.blog__slider',
+  items: 1,
   slideBy: 'page',
-  autoplay: true
+  rewind:false,
+  loop:true,
+  speed:6000,
+  gutter:100,
+  autoplay: true,
+  controls:false,
+  nav:false,
+  autoplayButtonOutput: false,
 });

@@ -14,7 +14,7 @@
         @apply bg-bgcolor;
     }
     .blog__wrapper {
-        @apply py-10 px-3 flex flex-col gap-5;
+        @apply py-10 px-4 flex flex-col;
     }
     .blog__title h3 {
         @apply font-dosis text-dark font-bold pb-3 text-[2rem];
@@ -22,38 +22,85 @@
     .blog__title p {
         @apply text-[1rem];
     }
+    .blog__slider {
+        @apply pt-[4rem];
+    }
+    .blog__slider--card {
+        @apply flex flex-col bg-light;
+    }
+    .blog__slider--image img {
+        @apply w-[30rem];
+    }
+    .blog__slider--icons {
+        @apply flex flex-row gap-4 py-2 px-3;
+    }
+    .blog__slider--icons i {
+        @apply pr-1 text-tertiary;
+    }
+    .blog__slider--icons a {
+        @apply hover:text-accent;
+    }
+    .blog__slider--text {
+        @apply px-3 py-3;
+    }
+    .blog__slider--text h3 {
+        @apply font-bold text-[1.7rem]
+    }
+    .blog__slider--text p{
+        @apply pb-2 border-b-2 border-lightgray mb-4;
+    }
+    .blog__slider--button {
+        @apply bg-tertiary text-center py-2 text-white;
+    }
 
-    /* BLOG SLIDER */
-    .blog__card {
-        @apply flex flex-col;
+    /* TESTIMONIAL */
+    .testimonial__wrapper {
+        @apply flex flex-col gap-10 px-4; 
     }
-    .blog__date {
-        @apply flex flex-col text-light;
+    .testimonial__title h3 {
+        @apply font-dosis text-dark font-bold pb-3 text-[2rem];
     }
-    .blog__day {
-        @apply text-[2rem] bg-tertiary max-w-14 justify-center;
+    .testimonial__card {
+        @apply text-center items-center border-2 py-[3rem] px-2;
     }
-    .blog__month {
-        @apply text-[1rem] bg-accent max-w-14 justify-center;
-     }
-     .blog__icons {
-        @apply text-[0.8rem] flex flex-row; 
-     }
-     .blog__icons i {
-        @apply text-tertiary p-1;
-     }
-     .blog__icons a {
-        @apply text-lightgray hover:text-accent;
-     }
-     /* .blog__card-text h3{
-        @apply text-[1.5rem] font-bold;
-     } */
-     .blog__card-text p {
-        @apply text-lightgray pb-10
-     }
-     .blog__cardHover {
-        @apply flex flex-row gap-10;
-     }
+    .testimonial__text p{
+        @apply text-lightgray;
+    }
+    .testimonial__text i{
+        @apply text-[5rem] text-tertiary;
+    }
+    
+    /* FOOTER */
+    .footer__wrapper {
+        @apply py-10 px-4 flex flex-col gap-5;
+    }
+    .footer__aboutUs--text {
+        @apply flex flex-col text-light gap-2 pb-5;
+    }
+    /* .footer__aboutUs--text span{
+        @apply content-['_________'] inline-block h-[0.1rem] bg-light w-[4.7rem];
+    } */
+    /* .footer__aboutUs--text h3 {
+        @apply text-light font-bold text-[1.6rem] pb-2;
+    } */
+    .footer__aboutUs--icons i{
+        @apply text-light border border-2 rounded-full p-3 hover:border-transparent ease-out duration-700;
+    }
+    .footer__links li::before {
+        @apply inline-block content-[''] bg-light h-[0.2rem] w-[0.8rem] mb-[0.3rem] mr-2;
+    }
+    .footer__newsletter--text p {
+        @apply text-light py-4;
+    }
+    .footer__newsletter--form input {
+        @apply py-3 px-2 w-[28rem] outline-none;
+    }
+    .footer__newsletter--button a {
+        @apply bg-tertiary  text-white hover:bg-accent text-white p-6;
+    }
+    .footer__instagram--images img {
+        @apply h-[4rem] w-[10rem] object-cover
+    }
 }
 
 @layer components {
@@ -61,14 +108,21 @@ h1,h2,h3,h4,h5,h6 {
     @apply font-dosis;
 }
     /* BLOG HOVER IMAGE */
-    .img {
-        @apply h-14 w-14;
+    /* .img {
+        @apply h-11 w-11;
     }
     .img.hoverImg {
         @apply border border-transparent rounded-full;
     }
     .text.h3 {
         @apply text-[1.6rem] font-bold;
+    }
+    /*  */
+    .word.h3 {
+        @apply  text-light font-bold text-[1.6rem] pb-2;
+    }
+    .word.span {
+        @apply content-['_________'] inline-block h-[0.2rem] bg-light w-[4.7rem];
     }
     .text.sliderh3{
         @apply text-[1.4rem] font-bold hover:text-accent duration-700;
@@ -77,13 +131,13 @@ h1,h2,h3,h4,h5,h6 {
 
 @layer utilities {
     .btn {
-        @apply py-2 px-4 bg-transparent border border-transparent rounded-lg;
+        @apply py-2 px-4 bg-transparent border border-transparent;
     }
     .btn.bg--tertiary {
         @apply bg-tertiary  text-white hover:bg-accent text-white;
     }
     .btn.blogButton {
-        @apply bg-tertiary text-white hover:bg-accent text-white text-center p-2;
+        @apply bg-tertiary text-white hover:bg-accent text-white;
     }
 
 }
