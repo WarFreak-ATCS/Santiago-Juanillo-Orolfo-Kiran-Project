@@ -11,7 +11,7 @@ module.exports = {
         dark: "#000000",
         light: "#ffffff",
         accent: "#123a54",
-        bgcolor: "#f5f5f5",
+     
       },
     },
   },
