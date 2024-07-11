@@ -10,21 +10,24 @@
     body{
         @apply font-dosis 
     }
+    .container{
+        @apply max-w-[1600px] w-full px-4 mx-auto
+    }
     /* DONATON */
+    .donation__title{
+        @apply lg:m-[5rem]
+    }
     .donation__title h1{
-        @apply font-bold text-4xl ml-[2rem]
+        @apply font-bold text-4xl 
     }
     .donation__title p{
-        @apply font-light text-[1.1rem] pb-10 font-normal max-w-[28.5rem] ml-[2rem];
+        @apply font-light text-[1.1rem] pt-5 pb-10 font-normal max-w-[28.5rem] ;
     }
     .donation__select select{
-        @apply w-[27rem] text-center h-[2.5rem] bg-light font-semibold justify-center items-center mx-auto ml-[2rem]
-    }
-    .donate__list {
-        @apply text-center
-    }
+        @apply w-[28rem] text-center h-[2.5rem] bg-light font-semibold justify-center items-center mx-auto 
+    }  
     .donate__box{
-        @apply  bg-accent mt-[20px] w-[27rem] justify-center items-center text-center mx-auto
+        @apply  bg-accent mt-[20px] w-[28rem]  text-center
     }
     .donate__box input {
         @apply m-[1rem]
@@ -33,15 +36,41 @@
         @apply text-white font-sans
     }
     .donate__checkbox{
-        @apply p-4 py-6  ml-[1.1rem]
+        @apply py-6 
     }
     .donate__checkbox label{
-        @apply font-semibold text-xl ml-[.5rem]
+        @apply font-semibold text-xl 
+    }
+    .donate__btn a{
+        @apply bg-terciary p-5 pl-14 pr-14  font-bold text-light font-medium
     }
 
-    .donate__btn a{
-        @apply bg-terciary p-5 pl-14 pr-14 m-2 font-bold text-light font-medium ml-[2rem]
+    /* Sponsor */
+    .sponsor__hover  {
+        @apply absolute h-[31rem] top-[59rem] w-[29rem] right-[-100%] transition-all ease-linear delay-75 duration-100;
     }
+    .sponsor__hover.open {
+        @apply right-4 ease-linear delay-75 duration-200;
+    }
+    .sponsor__hover--text {
+        @apply flex flex-col justify-center items-center w-[20rem];
+    }
+    .sponsor__hover ul li {
+        @apply border-2 text-sm p-2;
+    }
+
+    /* GALLEY */
+    .gallery__category li{
+        @apply bg-light p-4 pr-[2rem] pl-[2rem]  hover:bg-accent hover:text-white border-b-4 border-b-terciary;
+    }
+    .gallery__category ul.active{
+        @apply bg-terciary text-black
+    }
+    .gallery__img img{
+        @apply p-4
+    }
+    
+    
 }
 
 @layer components {

@@ -4,13 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HOME</title>
-    <link
-      rel="stylesheet"
-
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    />
-
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
    <link rel="stylesheet" href="./output.css">
 </head>
 <body>
@@ -31,8 +26,8 @@
      </section>
 
      <!-- DONATION -->
-      <section class="donation">
-        <div class="container bg-lightgray py-16">
+      <section class="donation  bg-lightgray py-16 ">
+        <div class="container">
             <div class="donation__wrapper  ">
                 <div class="donation__title">
                 <h1>Quick Donation</h1>
@@ -76,8 +71,8 @@
                     <label for=""> Donate As Anonymous</label>
                 </div>
 
-                <div class="donate__btn">
-                    <a href=""> DONATION</a>
+                <div class="donate__btn ">
+                    <a href="" class=" hover:bg-accent"> DONATION</a>
                 </div>
                 
                 
@@ -88,13 +83,81 @@
       </section>
 
       <!-- SPONSOR -->
-       <section class="sponsor">
-
+       <section class="sponsor bg-white py-20">
+        <div class="container">
+            <div class="sponsor__wrapper">
+                <div class="sponsor__title">
+                    <h2 class="font-bold text-4xl">Our Sponsor</h2>
+                    <p class="py-8 text-[1.1rem] font-light">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                        standard dummy text.</p>
+                </div>
+                <div class="sponsor__slider">
+                    <div class="sponsor__card">
+                        <!-- Abbie James -->
+                        <div class="sponsor__item flex flex-row gap-10">
+                            <div class="sponsor__img ">
+                                <img src="../IMG/sp-3.jpg " class="w-[500px]">
+                                <h2 class="bg-terciary text-center font-bold text-2xl text-white">Abbie James</h2>
+                            </div>
+                            <div class="sponsor__hover bg-terciary text-white flex flex-col justify-center text-center items-center gap-6">
+                                <div class="sponsor__hover--text">
+                                    <h3 class="font-bold text-2xl">Abbie James</h3>
+                                <p>Lorem
+                                    Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry.</p>
+                                    <div class="sponsor__social">
+                                        <ul class="flex gap-3">
+                                            <li><i class="fa-brands fa-facebook"></i></li>
+                                            <li><i class="fa-brands fa-twitter"></i></li>
+                                            <li><i class="fa-brands fa-square-instagram"></i></li>
+                                            <li><i class="fa-brands fa-linkedin"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                </div>
+                        </div>
+                       
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
        </section>
 
-       <!-- GALLERY -->
-        <section class="gallery">
 
+       <!-- GALLERY -->
+        <section class="gallery bg-lightgray py-20">
+            <div class="container">
+                <div class="gallery__wrapper">
+                    <div class="gallery__title">
+                        <h2 class="font-bold text-4xl">Our Gallery</h2>
+                        <p class="py-8 text-[1.1rem] font-light">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                            standard dummy text.</p>
+                        
+                    </div>
+                    <div class="gallery__category text-dark ">
+                        <ul class="flex  justify-center gap-1">
+                            <li class="gallery__item active:bg-terciary">Show All</li>
+                            <li class="gallery__item">Images</li>
+                            <li class="gallery__item">Videos</li>
+                        </ul>
+                        <ul class="flex justify-center gap-1  ">
+                            <li class="gallery__item">Slider</li>
+                            <li class="gallery__item">Links</li>
+                        </ul>
+                    </div>
+
+                    <div class="gallery__img pt-10">
+                        <img src="../IMG/g_gal_1.jpg" width="500px" alt="">
+                        <img src="../IMG/g_gal_2.jpg" width="500px" alt="">
+                        <img src="../IMG/g_gal_3.jpg" width="500px" alt="">
+                        <img src="../IMG/g_gal_4.jpg" width="500px" alt="">
+                        <img src="../IMG/g_gal_5.jpg" width="500px" alt="">
+                        <img src="../IMG/g_gal_6.jpg" width="500px" alt="">
+                    </div>
+
+                </div>
+            </div>
         </section>
 
         <!-- BLOG -->
@@ -112,11 +175,10 @@
             
           </footer>
 
-
-
-
-
- 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script src="./js/hover.js"></script>
+     
+          
 </body>
 
 </html>
