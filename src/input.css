@@ -7,7 +7,7 @@
 
 @layer base{
     body{
-        @apply font-dosis font-source overflow-hidden
+        @apply font-dosis overflow-hidden
     }
 }
 
