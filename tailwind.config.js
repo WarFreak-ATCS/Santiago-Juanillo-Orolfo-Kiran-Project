@@ -12,7 +12,7 @@ module.exports = {
         light: "#ffffff",
         accent: "#123a54",
         tertiary: "#23A884",
-        lightgray: "#F4F4F4",
+        lightgray: "#999999",
         bgcolor: "#f5f5f5",
       },
     },

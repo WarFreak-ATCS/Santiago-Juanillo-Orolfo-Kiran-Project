@@ -7,22 +7,9 @@
 
 @layer base{
     body{
-        @apply font-dosis overflow-hidden
+        @apply font-dosis overflow-hidden;
     }
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 @layer components {
 h1,h2,h3,h4,h5,h6 {
@@ -45,5 +32,16 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 @layer utilities {
+    .btn {
+        @apply py-2 px-4 bg-transparent border border-transparent rounded-lg;
+    }
+    .btn.bg--tertiary {
+        @apply bg-tertiary  text-white hover:bg-accent text-white;
+    }
+
+    .btn.slider {
+        @apply bg-tertiary p-2 text-center text-white font-bold tracking-wider;
+    }
+
 
 }
