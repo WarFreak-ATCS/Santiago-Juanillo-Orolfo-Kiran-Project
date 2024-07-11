@@ -1,5 +1,3 @@
-const { lightgray } = require('color-name');
-
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./dist/*.{html,js}"],
@@ -9,7 +7,7 @@ module.exports = {
         dosis: "Dosis",
         source: "Source",
       },
-      colors: {
+     colors: {
         dark: "#000000",
         light: "#ffffff",
         accent: "#123a54",
