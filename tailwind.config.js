@@ -11,6 +11,8 @@ module.exports = {
         dark: "#000000",
         light: "#ffffff",
         accent: "#123a54",
+        terciary: "#23A884",
+        lightgray: "#F4F4F4",
       },
     },
   },
