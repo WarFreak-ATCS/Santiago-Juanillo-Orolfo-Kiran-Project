@@ -449,7 +449,6 @@ video {
 }
 
 body{
-  overflow: hidden;
   font-family: Dosis;
 }
 
@@ -544,6 +543,27 @@ body{
   padding-bottom: 2.5rem;
   --tw-text-opacity: 1;
   color: rgb(153 153 153 / var(--tw-text-opacity));
+}
+
+/* history */
+
+.history{
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 1024px){
+  .history__wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
+
+.history__text{
+  max-width: 32rem;
 }
 
 *, ::before, ::after{
@@ -713,6 +733,80 @@ h1,h2,h3,h4,h5,h6{
   text-decoration-line: underline;
 }
 
+.mx-6{
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.mb-3{
+  margin-bottom: 0.75rem;
+}
+
+.mb-5{
+  margin-bottom: 1.25rem;
+}
+
+.mb-7{
+  margin-bottom: 1.75rem;
+}
+
+.mt-16{
+  margin-top: 4rem;
+}
+
+.mt-6{
+  margin-top: 1.5rem;
+}
+
+.flex{
+  display: flex;
+}
+
+.justify-center{
+  justify-content: center;
+}
+
+.pb-20{
+  padding-bottom: 5rem;
+}
+
+.pt-14{
+  padding-top: 3.5rem;
+}
+
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.font-semibold{
+  font-weight: 600;
+}
+
+.leading-8{
+  line-height: 2rem;
+}
+
+.text-black{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.text-lightgray{
+  --tw-text-opacity: 1;
+  color: rgb(153 153 153 / var(--tw-text-opacity));
+}
+
+.text-tertiary{
+  --tw-text-opacity: 1;
+  color: rgb(35 168 132 / var(--tw-text-opacity));
+}
+
 .btn{
   border-radius: 0.5rem;
   border-width: 1px;
@@ -740,6 +834,21 @@ h1,h2,h3,h4,h5,h6{
   --tw-bg-opacity: 1;
   background-color: rgb(35 168 132 / var(--tw-bg-opacity));
   padding: 0.5rem;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.btn.straight{
+  border-radius: 0px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(35 168 132 / var(--tw-bg-opacity));
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
   text-align: center;
   font-weight: 700;
   letter-spacing: 0.05em;

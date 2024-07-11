@@ -7,7 +7,7 @@
 
 @layer base{
     body{
-        @apply font-dosis overflow-hidden;
+        @apply font-dosis;
     }
     /* BLOG */
     .blog {
@@ -53,6 +53,19 @@
      }
 
 
+     /* history */
+     .history {
+        @apply flex justify-center;
+     }
+     .history__wrapper {
+        @apply 
+        /* desktop */
+        lg:flex lg:flex-row lg:items-center lg:justify-center lg:gap-4;
+     }
+     .history__text {
+        @apply max-w-[32rem]
+     }
+
 }
 
 @layer components {
@@ -86,6 +99,8 @@ h1,h2,h3,h4,h5,h6 {
     .btn.slider {
         @apply bg-tertiary p-2 text-center text-white font-bold tracking-wider;
     }
-
+    .btn.straight {
+        @apply bg-tertiary py-4 px-10 text-center text-white font-bold tracking-wider rounded-none;
+    }
 
 }
