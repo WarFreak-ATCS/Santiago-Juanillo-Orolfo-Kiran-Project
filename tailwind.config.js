@@ -5,12 +5,13 @@ module.exports = {
     extend: {
       fontFamily: {
         dosis: "Dosis",
-        source: "Source"
+        source: "Source",
       },
       colors: {
         dark: "#000000",
         light: "#ffffff",
         accent: "#123a54",
+        bgcolor: "#f5f5f5",
       },
     },
   },
