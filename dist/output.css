@@ -561,6 +561,102 @@ body{
   --tw-contain-style:  ;
 }
 
+.container{
+  width: 100%;
+}
+
+@media (min-width: 640px){
+  .container{
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px){
+  .container{
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px){
+  .container{
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px){
+  .container{
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px){
+  .container{
+    max-width: 1536px;
+  }
+}
+
 h1,h2,h3,h4,h5,h6{
   font-family: Dosis;
+}
+
+/* header */
+
+.header__wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__wrapper img{
+  top: 8rem;
+}
+
+.header nav ul{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.header nav ul li{
+  width: 15rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding: 0.5rem;
+  text-decoration-color: #23A884;
+  text-underline-offset: ;
+}
+
+.header nav ul li:hover{
+  text-decoration-line: underline;
+}
+
+.fixed{
+  position: fixed;
+}
+
+.relative{
+  position: relative;
+}
+
+.bg-pink-400{
+  --tw-bg-opacity: 1;
+  background-color: rgb(244 114 182 / var(--tw-bg-opacity));
+}
+
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.font-semibold{
+  font-weight: 600;
+}
+
+.text-tertiary{
+  --tw-text-opacity: 1;
+  color: rgb(35 168 132 / var(--tw-text-opacity));
 }

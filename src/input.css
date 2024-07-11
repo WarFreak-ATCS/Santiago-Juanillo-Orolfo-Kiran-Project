@@ -9,12 +9,39 @@
     body{
         @apply font-dosis overflow-hidden
     }
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 @layer components {
 h1,h2,h3,h4,h5,h6 {
     @apply font-dosis;
 }
+ /* header */
+ .header__wrapper {
+    @apply flex justify-between;
+}
+.header__wrapper img {
+    @apply top-32;
+}
+.header nav ul {
+    @apply flex flex-col gap-2;
+}
+.header nav ul li {
+    @apply bg-white w-60 p-2 hover:underline underline-offset-[] decoration-tertiary;
+}
+
 }
 
 @layer utilities {
