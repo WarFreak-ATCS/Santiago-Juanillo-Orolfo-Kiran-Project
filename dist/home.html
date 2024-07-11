@@ -8,8 +8,9 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
     <link rel="stylesheet" href="./output.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
     <!-- HEADER -->
@@ -41,7 +42,41 @@
               industry. Lorem Ipsum has been the industry's standard dummy text.
             </p>
           </div>
-          <div class="blog__slider">
+          <div class="blog__slider bg-bgcolor">
+            <div class="blog__card">
+              <div class="blog__card-image">
+                <img src="../IMG/littlehands.jpg" alt="" />
+                <div class="blog__cardHover p-2 bg-tertiary max-w-44">
+                    <img src="../IMG/portrait1.jpg" alt="" class="img hoverImg">
+                    <p class="py-4">Jhon Deo</p>
+                </div>
+              </div>
+              <div class="blog__date">
+                <div class="blog__day">
+                    <h4>10</h4>
+                </div>
+                <div class="blog__month">
+                    <p>Jan 2019</p>
+                </div>
+              </div>
+              <div class="blog__icons">
+                <div class="blog__icons-comment">
+                    <a href=""><i class="fa-solid fa-comment"></i>10 comments</a>
+                    <a href=""><i class="fa-solid fa-thumbs-up"></i>2 likes</a>
+                </div>
+              </div>
+              <div class="blog__card-text">
+                <h3 class="text sliderh3">Little Hands</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit
+                  voluptate explicabo, eos consequuntur necessitatibus ab facere
+                  nihil mollitia molestiae earum?
+                </p>
+              </div>
+              <div class="blog__button btn blogButton">
+                <a href="">READ MORE</a>
+              </div>
+            </div>
             <div class="blog__card">
               <div class="blog__card-image">
                 <img src="../IMG/littlehands.jpg" alt="" />
@@ -61,14 +96,74 @@
                 </div>
               </div>
               <div class="blog__card-text">
-                <h3>Little Hands</h3>
+                <h3 class="text sliderh3" >Little Hands</h3>
                 <p>
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit
                   voluptate explicabo, eos consequuntur necessitatibus ab facere
                   nihil mollitia molestiae earum?
                 </p>
               </div>
-              <div class="blog__button" class="btn slider">
+              <div class="blog__button btn blogButton">
+                <a href="">READ MORE</a>
+              </div>
+            </div>
+            <div class="blog__card">
+              <div class="blog__card-image">
+                <img src="../IMG/littlehands.jpg" alt="" />
+              </div>
+              <div class="blog__date">
+                <div class="blog__day">
+                    <h4>10</h4>
+                </div>
+                <div class="blog__month">
+                    <p>Jan 2019</p>
+                </div>
+              </div>
+              <div class="blog__icons">
+                <div class="blog__icons-comment">
+                    <a href=""><i class="fa-solid fa-comment"></i>10 comments</a>
+                    <a href=""><i class="fa-solid fa-thumbs-up"></i>2 likes</a>
+                </div>
+              </div>
+              <div class="blog__card-text">
+                <h3 class="text sliderh3">Little Hands</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit
+                  voluptate explicabo, eos consequuntur necessitatibus ab facere
+                  nihil mollitia molestiae earum?
+                </p>
+              </div>
+              <div class="blog__button btn blogButton">
+                <a href="">READ MORE</a>
+              </div>
+            </div>
+            <div class="blog__card">
+              <div class="blog__card-image">
+                <img src="../IMG/littlehands.jpg" alt="" />
+              </div>
+              <div class="blog__date">
+                <div class="blog__day">
+                    <h4>10</h4>
+                </div>
+                <div class="blog__month">
+                    <p>Jan 2019</p>
+                </div>
+              </div>
+              <div class="blog__icons">
+                <div class="blog__icons-comment">
+                    <a href=""><i class="fa-solid fa-comment"></i>10 comments</a>
+                    <a href=""><i class="fa-solid fa-thumbs-up"></i>2 likes</a>
+                </div>
+              </div>
+              <div class="blog__card-text">
+                <h3 class="text sliderh3">Little Hands</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit
+                  voluptate explicabo, eos consequuntur necessitatibus ab facere
+                  nihil mollitia molestiae earum?
+                </p>
+              </div>
+              <div class="blog__button btn blogButton">
                 <a href="">READ MORE</a>
               </div>
             </div>
@@ -81,6 +176,15 @@
     <section class="testimonial"></section>
 
     <!-- FOOTER -->
-    <footer class="footer"></footer>
+    <footer class="footer">
+
+    </footer>
+
+    <!-- SCRIPT -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
   </body>
 </html>

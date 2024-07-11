@@ -7,7 +7,7 @@
 
 @layer base{
     body{
-        @apply font-dosis overflow-hidden;
+        @apply font-dosis;
     }
     /* BLOG */
     .blog {
@@ -45,20 +45,34 @@
      .blog__icons a {
         @apply text-lightgray hover:text-accent;
      }
-     .blog__card-text h3{
+     /* .blog__card-text h3{
         @apply text-[1.5rem] font-bold;
-     }
+     } */
      .blog__card-text p {
         @apply text-lightgray pb-10
      }
-
-
+     .blog__cardHover {
+        @apply flex flex-row gap-10;
+     }
 }
 
 @layer components {
 h1,h2,h3,h4,h5,h6 {
     @apply font-dosis;
 }
+    /* BLOG HOVER IMAGE */
+    .img {
+        @apply h-14 w-14;
+    }
+    .img.hoverImg {
+        @apply border border-transparent rounded-full;
+    }
+    .text.h3 {
+        @apply text-[1.6rem] font-bold;
+    }
+    .text.sliderh3{
+        @apply text-[1.4rem] font-bold hover:text-accent duration-700;
+    }
 }
 
 @layer utilities {
@@ -68,10 +82,8 @@ h1,h2,h3,h4,h5,h6 {
     .btn.bg--tertiary {
         @apply bg-tertiary  text-white hover:bg-accent text-white;
     }
-
-    .btn.slider {
-        @apply bg-tertiary p-2 text-center text-white font-bold tracking-wider;
+    .btn.blogButton {
+        @apply bg-tertiary text-white hover:bg-accent text-white text-center p-2;
     }
-
 
 }
