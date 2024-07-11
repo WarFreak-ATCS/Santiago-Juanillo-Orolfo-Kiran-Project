@@ -449,8 +449,91 @@ video {
 }
 
 body{
-  overflow: hidden;
   font-family: Dosis;
+}
+
+/* DONATON */
+
+.donation__title h1{
+  margin-left: 2rem;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+}
+
+.donation__title p{
+  margin-left: 2rem;
+  max-width: 28.5rem;
+  padding-bottom: 2.5rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.donation__select select{
+  margin-left: auto;
+  margin-right: auto;
+  margin-left: 2rem;
+  height: 2.5rem;
+  width: 27rem;
+  align-items: center;
+  justify-content: center;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  text-align: center;
+  font-weight: 600;
+}
+
+.donate__list{
+  text-align: center;
+}
+
+.donate__box{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  width: 27rem;
+  align-items: center;
+  justify-content: center;
+  --tw-bg-opacity: 1;
+  background-color: rgb(18 58 84 / var(--tw-bg-opacity));
+  text-align: center;
+}
+
+.donate__box input{
+  margin: 1rem;
+}
+
+.donate__box label{
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.donate__checkbox{
+  margin-left: 1.1rem;
+  padding: 1rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.donate__checkbox label{
+  margin-left: .5rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+}
+
+.donate__btn a{
+  margin: 0.5rem;
+  margin-left: 2rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(35 168 132 / var(--tw-bg-opacity));
+  padding: 1.25rem;
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 *, ::before, ::after{
@@ -561,6 +644,59 @@ body{
   --tw-contain-style:  ;
 }
 
+.container{
+  width: 100%;
+}
+
+@media (min-width: 640px){
+  .container{
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px){
+  .container{
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px){
+  .container{
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px){
+  .container{
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px){
+  .container{
+    max-width: 1536px;
+  }
+}
+
 h1,h2,h3,h4,h5,h6{
   font-family: Dosis;
+}
+
+.gap-5{
+  gap: 1.25rem;
+}
+
+.bg-lightgray{
+  --tw-bg-opacity: 1;
+  background-color: rgb(244 244 244 / var(--tw-bg-opacity));
+}
+
+.bg-terciary{
+  --tw-bg-opacity: 1;
+  background-color: rgb(35 168 132 / var(--tw-bg-opacity));
+}
+
+.py-16{
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }

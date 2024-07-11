@@ -6,8 +6,41 @@
 @tailwind utilities;
 
 @layer base{
+
     body{
-        @apply font-dosis overflow-hidden
+        @apply font-dosis 
+    }
+    /* DONATON */
+    .donation__title h1{
+        @apply font-bold text-4xl ml-[2rem]
+    }
+    .donation__title p{
+        @apply font-light text-[1.1rem] pb-10 font-normal max-w-[28.5rem] ml-[2rem];
+    }
+    .donation__select select{
+        @apply w-[27rem] text-center h-[2.5rem] bg-light font-semibold justify-center items-center mx-auto ml-[2rem]
+    }
+    .donate__list {
+        @apply text-center
+    }
+    .donate__box{
+        @apply  bg-accent mt-[20px] w-[27rem] justify-center items-center text-center mx-auto
+    }
+    .donate__box input {
+        @apply m-[1rem]
+    }
+    .donate__box label{
+        @apply text-white font-sans
+    }
+    .donate__checkbox{
+        @apply p-4 py-6  ml-[1.1rem]
+    }
+    .donate__checkbox label{
+        @apply font-semibold text-xl ml-[.5rem]
+    }
+
+    .donate__btn a{
+        @apply bg-terciary p-5 pl-14 pr-14 m-2 font-bold text-light font-medium ml-[2rem]
     }
 }
 
