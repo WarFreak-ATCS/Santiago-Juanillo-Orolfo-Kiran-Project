@@ -14,22 +14,24 @@
         @apply bg-bgcolor;
     }
     .blog__wrapper {
-        @apply py-10 px-4 flex flex-col;
+        @apply py-10 px-4 flex flex-col
+        /* DESKTOP */
+        lg:ml-[22rem];
     }
     .blog__title h3 {
         @apply font-dosis text-dark font-bold pb-3 text-[2rem];
     }
     .blog__title p {
-        @apply text-[1rem];
+        @apply text-[1rem] lg:w-[28rem];
     }
     .blog__slider {
-        @apply pt-[4rem];
+        @apply pt-[4rem] ;
     }
     .blog__slider--card {
-        @apply flex flex-col bg-light;
+        @apply flex flex-col bg-white lg:bg-bgcolor;
     }
     .blog__slider--image img {
-        @apply w-[30rem];
+        @apply w-[30rem] items-center lg:w-[20rem] lg:px-3;
     }
     .blog__slider--icons {
         @apply flex flex-row gap-4 py-2 px-3;
@@ -41,7 +43,7 @@
         @apply hover:text-accent;
     }
     .blog__slider--text {
-        @apply px-3 py-3;
+        @apply px-3 py-3 w-[28.3rem] lg:w-[20rem];
     }
     .blog__slider--text h3 {
         @apply font-bold text-[1.7rem]
@@ -52,16 +54,30 @@
     .blog__slider--button {
         @apply bg-tertiary text-center py-2 text-white;
     }
+    .slider__card-hover img {
+        @apply w-12 h-12 rounded-full;
+    }
+    .slider__hover.open {
+        @apply ease-linear mt-4 ml-4 delay-75 duration-200;
+    }
+    .slider__hover {
+        @apply absolute mt-4 ml-4 lg:mt-1;
+    }
+    .slider__date {
+        @apply absolute mt-[19rem] ml-[22.5rem] w-[5rem] lg:mt-[10.7rem] lg:ml-[38.2rem];
+    }
+
+    
 
     /* TESTIMONIAL */
     .testimonial__wrapper {
-        @apply flex flex-col gap-10 px-4; 
+        @apply flex flex-col gap-10 px-4 lg:ml-[22rem]; 
     }
     .testimonial__title h3 {
         @apply font-dosis text-dark font-bold pb-3 text-[2rem];
     }
     .testimonial__card {
-        @apply text-center items-center border-2 py-[3rem] px-2;
+        @apply text-center border-2 py-[3rem] px-2 w-[28rem] lg:max-w-[20rem]
     }
     .testimonial__text p{
         @apply text-lightgray;
@@ -69,10 +85,43 @@
     .testimonial__text i{
         @apply text-[5rem] text-tertiary;
     }
+    .testimonial__content {
+        @apply lg:max-w-[30rem]
+    }
+    .testimonial__client {
+        @apply  flex flex-row pt-4 gap-4 items-center ml-[4rem];
+    }
+    .testimonial__slider {
+        @apply lg:text-center lg:max-w-[400rem]
+    }
+
+    /* ABOUT PAGE */
+    /* .mission {
+        @apply py-10 
+    }
+    .mission__wrapper {
+        @apply grid grid-cols-3 lg:ml-[23.7rem] bg-bgcolor
+    }
+    .mission__title {
+        @apply lg:ml-[23.7rem] pb-[3rem]
+    }
+    .mission__title h3 {
+        @apply font-bold text-4xl 
+    }
+    .mission__title p {
+        @apply text-lightgray
+    }
+    .mission__card {
+        @apply lg:h-[7rem] lg:w-[10rem] lg:bg-light lg:p-[5rem]
+    }
+    .mission__card--img {
+        @apply lg:h-[5rem] lg:w-[5rem]
+    } */
+
     
     /* FOOTER */
     .footer__wrapper {
-        @apply py-10 px-4 flex flex-col gap-5;
+        @apply py-10 px-4 flex flex-col gap-5 lg:grid lg:grid-cols-4 lg:w-[70rem] lg:ml-[23rem];
     }
     .footer__aboutUs--text {
         @apply flex flex-col text-light gap-2 pb-5;
@@ -93,14 +142,23 @@
         @apply text-light py-4;
     }
     .footer__newsletter--form input {
-        @apply py-3 px-2 w-[28rem] outline-none;
+        @apply py-3 px-2 w-[28rem] outline-none lg:w-[16rem];
     }
     .footer__newsletter--button a {
-        @apply bg-tertiary  text-white hover:bg-accent text-white p-6;
+        @apply bg-tertiary  text-white hover:bg-accent text-white p-6 lg:w-[10rem];
     }
     .footer__instagram--images img {
         @apply h-[4rem] w-[10rem] object-cover
     }
+    .footer__credits{
+        @apply lg:w-full
+    }
+    /* .footer__about {
+        @apply lg:w-[15rem]
+    }
+    .footer__links {
+        @apply lg:w-[15rem]
+    } */
 }
 
 @layer components {
