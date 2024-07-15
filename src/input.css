@@ -58,14 +58,15 @@
         @apply w-12 h-12 rounded-full;
     }
     .slider__hover.open {
-        @apply ease-linear mt-4 ml-4 delay-75 duration-200;
+        @apply ease-linear mt-4 ml-4 delay-75 duration-300 -translate-x-96 left-0;
     }
     .slider__hover {
-        @apply absolute mt-4 ml-4 lg:mt-1;
+        @apply absolute mt-4 ml-4 lg:mt-1 ;
     }
     .slider__date {
         @apply absolute mt-[17.6rem] ml-[22.5rem] w-[5rem] lg:mt-[10.7rem] lg:ml-[38.2rem];
     }
+
 
     
 
@@ -89,7 +90,7 @@
         @apply lg:max-w-[30rem]
     }
     .testimonial__client {
-        @apply  flex flex-row pt-4 gap-4 items-center ml-[4rem];
+        @apply  flex flex-row pt-4 gap-4 items-center ml-[7rem] lg:ml-[4rem];
     }
     .testimonial__slider {
         @apply lg:text-center lg:max-w-[400rem]
@@ -124,7 +125,7 @@
         @apply px-4 lg:ml-[22.2rem]
     }
     .mission__title h2 {
-        @apply font-semibold text-3xl 
+        @apply font-semibold text-4xl 
     }
     .mission__title p {
         @apply text-lightgray
@@ -139,7 +140,7 @@
         @apply flex flex-row gap-2 bg-light
     }
     .mission__cards img {
-        @apply h-[5rem] mt-6 mx-4 hover:scale-105 duration-300 object-cover
+        @apply h-[5rem] mt-6 mx-4 hover:h-[5.5rem] w-[5.5rem] duration-300 object-cover
     }
     .card__details {
         @apply flex flex-col gap-2 py-2 
@@ -153,6 +154,70 @@
     .card__details a {
         @apply text-tertiary hover:text-accent duration-300
     }
+
+    /* CAUSES */
+    .funds {
+        @apply bg-bgcolor py-10
+    }
+    .funds__wrapper {
+        @apply grid grid-cols-1 gap-10 px-4
+    }
+    .funds__donation--image img {
+        @apply w-[28rem] hover:scale-[1.02] duration-300 object-cover
+    }
+    .funds__donation--text {
+        @apply flex flex-col gap-4
+    }
+    .funds__donation--text h3 {
+        @apply mt-4 text-3xl font-semibold
+    }
+    .funds__raised {
+        @apply flex flex-row 
+    }
+    .raised {
+        @apply border border-tertiary px-20 rounded-full text-light bg-tertiary absolute z-10 text-center
+    }
+    .goal {
+        @apply border-accent text-lightgray px-14 rounded-r-full bg-gray-300 z-0  ml-60 
+    }
+    .funded {
+        @apply text-lightgray font-semibold text-xl
+    }
+    .funded--definition {
+        @apply text-lightgray 
+    }
+    .funds__donation--text a {
+        @apply w-[8rem] text-center
+    }
+    .funds__next {
+        @apply flex flex-row gap-2
+    }
+    .funds__next a {
+        @apply border border-tertiary 
+    }
+    .prev{
+        @apply px-4 py-2 text-accent hover:text-light hover:bg-accent hover:duration-700 hover:border-accent
+    }
+    .one {
+        @apply py-2 px-4 text-accent hover:text-light hover:bg-accent hover:duration-700 hover:border-accent
+    }
+    .two {
+        @apply py-2 px-4 bg-accent text-light 
+    }
+    .three {
+        @apply py-2 px-4 text-accent hover:text-light hover:bg-accent hover:duration-700 hover:border-accent
+    }
+    .next {
+        @apply py-2 px-4 text-accent hover:text-light hover:bg-accent hover:duration-700 hover:border-accent
+    }
+    .fund__wrapper {
+        @apply flex flex-col gap-7 items-center
+    }
+
+
+
+
+
     
     /* FOOTER */
     .footer__wrapper {
@@ -237,6 +302,9 @@ h1,h2,h3,h4,h5,h6 {
     }
     .btn.blogButton {
         @apply bg-tertiary text-white hover:bg-accent text-white;
+    }
+    .btn.blogName {
+        @apply text-dark hover:text-accent duration-300 italic
     }
 
 }
