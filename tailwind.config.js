@@ -14,6 +14,7 @@ module.exports = {
         tertiary: "#23A884",
         lightgray: "#999999",
         bgcolor: "#f5f5f5",
+        nav: "#263078",
       },
       backgroundImage: {
         church: " linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.6)),  url('../IMG/aboutbanner5.jpg')",
