@@ -786,7 +786,7 @@ body{
 /* banner */
 
 .about{
-  height: 17rem;
+  height: 25rem;
   background-image:  linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.6)),  url('../IMG/aboutbanner5.jpg');
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
@@ -798,14 +798,14 @@ body{
 }
 
 .about__title{
-  padding-top: 2.5rem;
+  padding-top: 8rem;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 @media (min-width: 1024px){
   .about__title{
-    margin-left: 22.2rem;
+    margin-left: 24rem;
   }
 }
 
@@ -1164,9 +1164,17 @@ body{
 .funds__wrapper{
   display: grid;
   grid-template-columns: repeat(1, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 2.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+@media (min-width: 1024px){
+  .funds__wrapper{
+    margin-left: 22.2rem;
+    display: grid;
+  }
 }
 
 .funds__donation--image img{
@@ -1216,6 +1224,13 @@ body{
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+@media (min-width: 1024px){
+  .raised{
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+  }
+}
+
 .goal{
   z-index: 0;
   margin-left: 15rem;
@@ -1231,12 +1246,27 @@ body{
   color: rgb(153 153 153 / var(--tw-text-opacity));
 }
 
+@media (min-width: 1024px){
+  .goal{
+    margin-left: 12rem;
+    justify-content: center;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
 .funded{
   font-size: 1.25rem;
   line-height: 1.75rem;
   font-weight: 600;
   --tw-text-opacity: 1;
   color: rgb(153 153 153 / var(--tw-text-opacity));
+}
+
+@media (min-width: 1024px){
+  .funds__donation--text{
+    margin-left: 0.75rem;
+  }
 }
 
 .funded--definition{
@@ -1253,6 +1283,12 @@ body{
   display: flex;
   flex-direction: row;
   gap: 0.5rem;
+}
+
+@media (min-width: 1024px){
+  .funds__next{
+    margin-left: 22.2rem;
+  }
 }
 
 .funds__next a{

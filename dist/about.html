@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HOME</title>
+    <title>ABOUT</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -16,6 +16,31 @@
     />
   </head>
   <body>
+      <!-- HEADER -->
+      <header class="header z-[999] w-screen top-0">
+        <div class="container">
+          <div class="header__wrapper flex">
+            <img src="../IMG/logo.png" alt="">
+            <nav>
+              <ul class="header__nav text-sm">
+                <li id="active"><a href="./home.html">HOME &nbsp; <span><i class="fa-solid fa-chevron-down"></i></span></a></li>
+                <li><a href="./about.html">ABOUT</i></a></li>
+                <li><a href="./causes.html">CAUSES &nbsp; <i class="fa-solid fa-chevron-down"></i></a></li>
+                <li><a href="">FAQS</a></li>
+                <li><a href="">PAGES &nbsp; <i class="fa-solid fa-chevron-down"></i></a></li>
+                <li><a href="">BLOG &nbsp; <i class="fa-solid fa-chevron-down"></i></a></li>
+                <li><a href="">CONTACT</i></a></li>
+                <li><a href="" class="text-2xl donate btn straightHeader">Donate</i></a></li>
+              </ul>
+            </nav>
+            <div class="toggle__menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </header>
     <!-- BANNER -->
   <section class="about">
     <div class="container">
@@ -32,6 +57,36 @@
       </div>
     </div>
   </section>
+  <section class="history py-10">
+    <div class="container">
+        <div class="history__wrapper">
+            <div class="history__text leading-8 text-lightgray">
+                <div class="history__title">
+                    <h3 class="text-3xl font-semibold mb-3 text-black">History About Us</h3>
+                    <h5 class="text-tertiary text-lg font-semibold mb-5">Find out more about how Chariti.</h5>
+                </div>
+                <p class="text-lg">
+                    The legal definition of a charitable organization (and of charity) varies between countries 
+                    and in some instances regions of the country. The regulation, the tax treatment, and the way 
+                    in which charity law affects charitable organizations also vary. Charitable organizations may 
+                    not use any of its funds to profit individual
+                </p>
+                <p class="text-lg mb-5">
+                    <i class="fa-solid fa-arrow-right-from-bracket text-tertiary mt-6"></i> Charity law within the UK varies among England and Wales, 
+                    Scotland and Northern Ireland, but the fundamental principles are the same
+                </p>
+                <p class="mb-7 text-lg">
+                    <i class="fa-solid fa-arrow-right-from-bracket text-tertiary"></i> Find out more about how Chariti works hard to ensure that your 
+                    donations are delivered directly to those that need it most.
+                </p>
+                <a href="" class="btn straight">READ MORE</a>
+            </div>
+            <div class="history__image mt-16 flex justify-center">
+                <img src="../IMG/about.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</section>
 
   <!-- OUR MISSION -->
    <section class="mission bg-bgcolor py-10">

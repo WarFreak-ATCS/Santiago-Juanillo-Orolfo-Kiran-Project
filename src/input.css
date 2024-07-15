@@ -136,13 +136,13 @@
 
     /* banner */
     .about {
-        @apply py-10 bg-church h-[17rem]
+        @apply py-10 bg-church h-[25rem]
     }
     .about__wrapper {
         @apply px-4
     }
     .about__title {
-        @apply text-light pt-10 lg:ml-[22.2rem]
+        @apply text-light pt-32 lg:ml-[24rem]
     }
     .about__title--others {
         @apply flex flex-row gap-3
@@ -279,7 +279,7 @@
         @apply bg-bgcolor py-10
     }
     .funds__wrapper {
-        @apply grid grid-cols-1 gap-10 px-4
+        @apply grid grid-cols-1 gap-10 px-4 lg:grid grid-cols-3 lg:ml-[22.2rem]
     }
     .funds__donation--image img {
         @apply w-[28rem] hover:scale-[1.02] duration-300 object-cover
@@ -294,13 +294,16 @@
         @apply flex flex-row 
     }
     .raised {
-        @apply border border-tertiary px-20 rounded-full text-light bg-tertiary absolute z-10 text-center
+        @apply border border-tertiary px-20 rounded-full text-light bg-tertiary absolute z-10 text-center lg:px-14
     }
     .goal {
-        @apply border-accent text-lightgray px-14 rounded-r-full bg-gray-300 z-0  ml-60 
+        @apply border-accent text-lightgray px-14 rounded-r-full bg-gray-300 z-0  ml-60 lg:px-6 lg:ml-48 lg:justify-center
     }
     .funded {
         @apply text-lightgray font-semibold text-xl
+    }
+    .funds__donation--text {
+        @apply lg:ml-3
     }
     .funded--definition {
         @apply text-lightgray 
@@ -309,7 +312,7 @@
         @apply w-[8rem] text-center
     }
     .funds__next {
-        @apply flex flex-row gap-2
+        @apply flex flex-row gap-2 lg:ml-[22.2rem]
     }
     .funds__next a {
         @apply border border-tertiary 
