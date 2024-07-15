@@ -9,19 +9,42 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./output.css" />
   </head>
   <body>
     <!-- HEADER -->
-    <header class="header"></header>
+    <header class="header z-[999] w-screen top-0">
+      <div class="container">
+        <div class="header__wrapper flex">
+          <img src="../IMG/logo.png" alt="">
+          <nav>
+            <ul class="header__nav text-sm">
+              <li id="active"><a href="">HOME &nbsp; <span><i class="fa-solid fa-chevron-down"></i></span></a></li>
+              <li><a href="">ABOUT</i></a></li>
+              <li><a href="">CAUSES &nbsp; <i class="fa-solid fa-chevron-down"></i></a></li>
+              <li><a href="">FAQS</a></li>
+              <li><a href="">PAGES &nbsp; <i class="fa-solid fa-chevron-down"></i></a></li>
+              <li><a href="">BLOG &nbsp; <i class="fa-solid fa-chevron-down"></i></a></li>
+              <li><a href="">CONTACT</i></a></li>
+              <li><a href="" class="text-2xl donate btn straightHeader">Donate</i></a></li>
+            </ul>
+          </nav>
+          <div class="toggle__menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </header>
 
     <!-- BANNER -->
     <section class="banner">
         <div class="banner__wrapper text-center text-white">
             <div class="slider__controls text-[1.5rem] absolute top-[16rem] cursor-pointer">
-                <i class="fa-solid fa-chevron-left prev relative bg-tertiary px-3 py-2 left-[1rem] z-10"></i>
-                <i class="fa-solid fa-chevron-right next relative bg-tertiary px-3 py-2 left-[25rem] z-10"></i>
+                <i class="fa-solid fa-chevron-left prev relative bg-tertiary px-3 py-2 z-10"></i>
+                <i class="fa-solid fa-chevron-right next relative bg-tertiary px-3 py-2 z-10"></i>
             </div>
             <div class="banner__slider">
                 <div class="banner__items h-fit max-h-fit">
@@ -52,7 +75,7 @@
     </section>
 
     <!-- HISTORY -->
-    <section class="history pb-20 -translate-y-56">
+   <section class="history pb-20 -translate-y-56">
         <div class="container">
             <div class="history__wrapper">
                 <div class="history__text leading-8 text-lightgray">
@@ -82,7 +105,7 @@
             </div>
         </div>
     </section>
-    
+
 
 
 
@@ -166,9 +189,17 @@
           <footer class="footer">
             
           </footer>
+          <script src="./button.js"></script>
+          <script src="./js/header.js"></script>
           <script src="./js/controls.js"></script>
           <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
           <script src="./js/slider.js"></script>
+          <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+          <script>
+            AOS.init();
+          </script>
           
 </body>
 </html>
+
+

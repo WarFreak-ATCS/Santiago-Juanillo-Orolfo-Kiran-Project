@@ -7,7 +7,7 @@
 
 @layer base{
     body{
-        @apply font-dosis;
+        @apply font-dosis overflow-x-hidden;
     }
     .container {
         @apply max-w-[1600px] w-full px-4 mx-auto;
@@ -69,16 +69,25 @@
         @apply max-w-[32rem]
      }
      /* banner */
+     .banner {
+        @apply pt-[3rem]
+     }
+     .slider__controls i:first-child {
+        @apply left-10;
+     }
+     .slider__controls i:last-child {
+        @apply left-[22rem] lg:left-[110rem];
+     }
      .banner__items img {
         @apply 
         /* desktop */
-        lg:w-full;
+        lg:w-full object-cover object-top;
      }
      .slider__controls {
-        @apply opacity-0 transition-opacity ease-linear duration-300;
+        @apply opacity-0 transition-opacity ease-in-out duration-300;
      }
      .slider__controls.open {
-        @apply opacity-100 transition-opacity ease-linear duration-300;
+        @apply opacity-100 transition-opacity ease-in-out duration-300;
      }
       .slider__controls i {
         @apply hover:bg-accent;
@@ -87,22 +96,60 @@
 
 @layer components {
 h1,h2,h3,h4,h5,h6 {
-    @apply font-dosis;
+    @apply font-dosis;  
 }
- /* header */
- .header__wrapper {
-    @apply flex justify-between;
+/* header */
+.header {
+    @apply w-full fixed z-50 bg-white h-14;
+}
+.header__wrapper {
+    @apply flex justify-between items-center;
 }
 .header__wrapper img {
-    @apply top-32;
+    @apply relative
+    
+    lg:bottom-5 lg:left-56;
 }
-.header nav ul {
-    @apply flex flex-col gap-2;
+.header__nav {
+    @apply bg-nav flex flex-col gap-5 fixed z-[999]
+    text-start w-[50%] p-5 right-[16.1rem] h-screen
+    font-semibold duration-700 ease-in-out right-[100%]
+     /* desktop */
+     lg:flex-row lg:h-auto lg:static lg:bg-transparent lg:w-auto lg:items-start lg:mb-44 lg:mr-40;
 }
-.header nav ul li {
-    @apply bg-white w-60 p-2 hover:underline underline-offset-[] decoration-tertiary;
+.header__nav li {
+    @apply border border-white bg-white  py-3 px-4 hover:underline 
+    decoration-tertiary underline-offset-[1rem] decoration-[2px]
+    text-center
+    
+    lg:border-transparent lg:border-0 lg:bg-transparent lg:py-0;
 }
-
+.header__nav li:last-child {
+    @apply border-0 border-transparent bg-transparent transform translate-x-[-20px] hover:no-underline;
+}
+.header__nav.open {
+    @apply right-[16rem];
+}
+#active {
+    @apply decoration-tertiary underline underline-offset-[1rem] decoration-[2px]
+}
+.toggle__menu {
+    @apply flex flex-col gap-1 z-50 cursor-pointer mr-7 mb-24
+    /* desktop */
+    lg:hidden;
+}
+.toggle__menu span {
+    @apply content-[*] bg-black w-[25px] h-[2px] rounded-lg
+    ease-in-out duration-700;
+}.toggle__menu.open span:first-child {
+    @apply translate-y-[6px] rotate-[225deg]
+}
+.toggle__menu.open span:nth-child(2) {
+    @apply opacity-0
+}
+.toggle__menu.open span:last-child {
+    @apply translate-y-[-6px] rotate-[-225deg]
+}
 }
 
 @layer utilities {
@@ -119,5 +166,10 @@ h1,h2,h3,h4,h5,h6 {
     .btn.straight {
         @apply bg-tertiary py-4 px-10 text-center text-white font-bold tracking-wider rounded-none hover:bg-accent transition-colors ease-in-out duration-300;
     }
-
+    .btn.straightHeader {
+        @apply bg-tertiary py-[1rem] px-10 text-center text-white font-bold tracking-wider rounded-none hover:bg-accent transition-colors ease-in-out duration-300 lg:relative lg:bottom-3;
+    }
+    .btn.mobileHeader {
+        @apply bg-tertiary py-[1rem] px-[4.6rem] text-center text-white font-bold tracking-wider rounded-none hover:bg-accent transition-colors ease-in-out duration-300;
+    }
 }

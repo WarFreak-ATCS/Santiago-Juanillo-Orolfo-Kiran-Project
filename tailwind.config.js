@@ -14,6 +14,7 @@ module.exports = {
         tertiary: "#23A884",
         lightgray: "#999999",
         bgcolor: "#f5f5f5",
+        nav: "#263078",
       },
     },
   },

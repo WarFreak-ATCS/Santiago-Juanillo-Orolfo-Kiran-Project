@@ -1,18 +1,22 @@
 const controls = document.querySelector('.slider__controls');
-const image = document.querySelector('.banner__items img');
-const text = document.querySelector('.banner__items--text');
+const images = document.querySelectorAll('.banner__items img');
+const texts = document.querySelectorAll('.banner__items--text');
 
-image.addEventListener("mouseover", () => {
-controls.classList.add("open");
+images.forEach((image) => {
+    image.addEventListener("mouseover", () => {
+        controls.classList.add("open");
+        });
+
+        image.addEventListener("mouseleave", () => {
+            controls.classList.remove("open");
+            });           
 });
 
-text.addEventListener("mouseover", () => {
-controls.classList.add("open");
+texts.forEach((text) => {
+    text.addEventListener("mouseover", () => {
+        controls.classList.add("open");
+        });
 });
-image.addEventListener("mouseleave", () => {
-controls.classList.remove("open");
-});
-
 
 controls.addEventListener("mouseover", () => {
 controls.classList.add("open");
