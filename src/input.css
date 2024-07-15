@@ -64,7 +64,7 @@
         @apply absolute mt-4 ml-4 lg:mt-1;
     }
     .slider__date {
-        @apply absolute mt-[19rem] ml-[22.5rem] w-[5rem] lg:mt-[10.7rem] lg:ml-[38.2rem];
+        @apply absolute mt-[17.6rem] ml-[22.5rem] w-[5rem] lg:mt-[10.7rem] lg:ml-[38.2rem];
     }
 
     
@@ -96,28 +96,63 @@
     }
 
     /* ABOUT PAGE */
-    /* .mission {
-        @apply py-10 
+
+    /* banner */
+    .about {
+        @apply py-10 bg-church h-[17rem]
     }
+    .about__wrapper {
+        @apply px-4
+    }
+    .about__title {
+        @apply text-light pt-10 lg:ml-[22.2rem]
+    }
+    .about__title--others {
+        @apply flex flex-row gap-3
+    }
+    .about__title h2{
+        @apply text-5xl pb-4 font-medium
+    }
+    .about__title--others a{
+        @apply hover:text-accent duration-300
+    }
+
+
+
+
     .mission__wrapper {
-        @apply grid grid-cols-3 lg:ml-[23.7rem] bg-bgcolor
+        @apply px-4 lg:ml-[22.2rem]
     }
-    .mission__title {
-        @apply lg:ml-[23.7rem] pb-[3rem]
-    }
-    .mission__title h3 {
-        @apply font-bold text-4xl 
+    .mission__title h2 {
+        @apply font-semibold text-3xl 
     }
     .mission__title p {
         @apply text-lightgray
     }
-    .mission__card {
-        @apply lg:h-[7rem] lg:w-[10rem] lg:bg-light lg:p-[5rem]
+    .mission__title {
+        @apply pb-8
     }
-    .mission__card--img {
-        @apply lg:h-[5rem] lg:w-[5rem]
-    } */
-
+    .mission__card {
+        @apply grid grid-cols-1 gap-10 lg:grid-cols-3
+    }
+    .mission__cards {
+        @apply flex flex-row gap-2 bg-light
+    }
+    .mission__cards img {
+        @apply h-[5rem] mt-6 mx-4 hover:scale-105 duration-300 object-cover
+    }
+    .card__details {
+        @apply flex flex-col gap-2 py-2 
+    }
+    .card__details h3 {
+        @apply font-bold text-lg hover:text-accent duration-300 cursor-pointer
+    }
+    .card__details p{
+        @apply text-lightgray
+    }
+    .card__details a {
+        @apply text-tertiary hover:text-accent duration-300
+    }
     
     /* FOOTER */
     .footer__wrapper {
@@ -152,6 +187,12 @@
     }
     .footer__credits{
         @apply lg:w-full
+    }
+    .footer__float {
+        @apply fixed right-4 bottom-[1.4rem]
+    }
+    .footer__float a{
+        @apply text-light border border-tertiary py-2 px-3 bg-tertiary 
     }
     /* .footer__about {
         @apply lg:w-[15rem]

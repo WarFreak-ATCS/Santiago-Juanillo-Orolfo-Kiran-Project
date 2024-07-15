@@ -610,7 +610,7 @@ body{
 
 .slider__date{
   position: absolute;
-  margin-top: 19rem;
+  margin-top: 17.6rem;
   margin-left: 22.5rem;
   width: 5rem;
 }
@@ -698,27 +698,152 @@ body{
 
 /* ABOUT PAGE */
 
-/* .mission {
-        @apply py-10 
-    }
-    .mission__wrapper {
-        @apply grid grid-cols-3 lg:ml-[23.7rem] bg-bgcolor
-    }
-    .mission__title {
-        @apply lg:ml-[23.7rem] pb-[3rem]
-    }
-    .mission__title h3 {
-        @apply font-bold text-4xl 
-    }
-    .mission__title p {
-        @apply text-lightgray
-    }
-    .mission__card {
-        @apply lg:h-[7rem] lg:w-[10rem] lg:bg-light lg:p-[5rem]
-    }
-    .mission__card--img {
-        @apply lg:h-[5rem] lg:w-[5rem]
-    } */
+/* banner */
+
+.about{
+  height: 17rem;
+  background-image:  linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.6)),  url('../IMG/aboutbanner5.jpg');
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.about__wrapper{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.about__title{
+  padding-top: 2.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 1024px){
+  .about__title{
+    margin-left: 22.2rem;
+  }
+}
+
+.about__title--others{
+  display: flex;
+  flex-direction: row;
+  gap: 0.75rem;
+}
+
+.about__title h2{
+  padding-bottom: 1rem;
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 500;
+}
+
+.about__title--others a{
+  transition-duration: 300ms;
+}
+
+.about__title--others a:hover{
+  --tw-text-opacity: 1;
+  color: rgb(18 58 84 / var(--tw-text-opacity));
+}
+
+.mission__wrapper{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 1024px){
+  .mission__wrapper{
+    margin-left: 22.2rem;
+  }
+}
+
+.mission__title h2{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 600;
+}
+
+.mission__title p{
+  --tw-text-opacity: 1;
+  color: rgb(153 153 153 / var(--tw-text-opacity));
+}
+
+.mission__title{
+  padding-bottom: 2rem;
+}
+
+.mission__card{
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 2.5rem;
+}
+
+@media (min-width: 1024px){
+  .mission__card{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.mission__cards{
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.mission__cards img{
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 1.5rem;
+  height: 5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition-duration: 300ms;
+}
+
+.mission__cards img:hover{
+  --tw-scale-x: 1.05;
+  --tw-scale-y: 1.05;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.card__details{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.card__details h3{
+  cursor: pointer;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+  transition-duration: 300ms;
+}
+
+.card__details h3:hover{
+  --tw-text-opacity: 1;
+  color: rgb(18 58 84 / var(--tw-text-opacity));
+}
+
+.card__details p{
+  --tw-text-opacity: 1;
+  color: rgb(153 153 153 / var(--tw-text-opacity));
+}
+
+.card__details a{
+  --tw-text-opacity: 1;
+  color: rgb(35 168 132 / var(--tw-text-opacity));
+  transition-duration: 300ms;
+}
+
+.card__details a:hover{
+  --tw-text-opacity: 1;
+  color: rgb(18 58 84 / var(--tw-text-opacity));
+}
 
 /* FOOTER */
 
@@ -837,6 +962,26 @@ body{
   .footer__credits{
     width: 100%;
   }
+}
+
+.footer__float{
+  position: fixed;
+  right: 1rem;
+  bottom: 1.4rem;
+}
+
+.footer__float a{
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(35 168 132 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(35 168 132 / var(--tw-bg-opacity));
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 /* .footer__about {
@@ -1073,6 +1218,11 @@ h1,h2,h3,h4,h5,h6{
 .bg-accent{
   --tw-bg-opacity: 1;
   background-color: rgb(18 58 84 / var(--tw-bg-opacity));
+}
+
+.bg-bgcolor{
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 245 245 / var(--tw-bg-opacity));
 }
 
 .bg-light{
