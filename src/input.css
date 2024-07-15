@@ -8,15 +8,13 @@
 @layer base{
 
     body{
-        @apply font-dosis 
+        @apply font-dosis overflow-x-hidden; 
     }
     .container{
-        @apply max-w-[1600px] w-full px-4 mx-auto
+        @apply max-w-[1600px] w-full px-4 mx-auto;
     }
     /* DONATON */
-    .donation__title{
-        @apply lg:m-[5rem]
-    }
+  
     .donation__title h1{
         @apply font-bold text-4xl 
     }
@@ -24,16 +22,19 @@
         @apply font-light text-[1.1rem] pt-5 pb-10 font-normal max-w-[28.5rem] ;
     }
     .donation__select select{
-        @apply w-[28rem] text-center h-[2.5rem] bg-light font-semibold justify-center items-center mx-auto 
+        @apply w-[100%]  lg:w-[100%] text-center lg:h-[3rem]
+    }
+    .donation__select {
+        @apply w-[28rem] text-center h-[2.5rem] bg-light font-semibold justify-center text-center;   
     }  
     .donate__box{
         @apply  bg-accent mt-[20px] w-[28rem]  text-center
     }
     .donate__box input {
-        @apply m-[1rem]
+        @apply m-[.9rem]
     }
     .donate__box label{
-        @apply text-white font-sans
+        @apply text-white font-sans lg:mr-[2rem] justify-center items-center text-center font-semibold
     }
     .donate__checkbox{
         @apply py-6 
@@ -44,33 +45,59 @@
     .donate__btn a{
         @apply bg-terciary p-5 pl-14 pr-14  font-bold text-light font-medium
     }
-
     /* Sponsor */
-    .sponsor__hover  {
-        @apply absolute h-[31rem] top-[59rem] w-[29rem] right-[-100%] transition-all ease-linear delay-75 duration-100;
+    .sponsor__wrapper {
+        @apply flex flex-col justify-center
     }
-    .sponsor__hover.open {
-        @apply right-4 ease-linear delay-75 duration-200;
+    .sponsor__slider{
+        @apply lg:flex lg:flex-row lg:justify-center lg:gap-10
+       
     }
-    .sponsor__hover--text {
-        @apply flex flex-col justify-center items-center w-[20rem];
+    .sponsor_card {
+        @apply h-fit
     }
-    .sponsor__hover ul li {
-        @apply border-2 text-sm p-2;
+    .sponsor__card--hover.hover {
+        @apply opacity-100 left-0  transition-all ease-in-out duration-700;
     }
 
-    /* GALLEY */
-    .gallery__category li{
-        @apply bg-light p-4 pr-[2rem] pl-[2rem]  hover:bg-accent hover:text-white border-b-4 border-b-terciary;
+        /* GALLERY */
+        .gallery__category li{
+        @apply bg-light pt-4 text-center flex flex-col;
     }
-    .gallery__category ul.active{
-        @apply bg-terciary text-black
+   
+    .gallery__category li span {
+        @apply block h-1 w-32 mt-2 bg-terciary;
     }
     .gallery__img img{
         @apply p-4
     }
-    
-    
+    .gallery__wrap{
+        @apply hidden;
+    }
+    .gallery__wrap.active{
+        @apply  block
+    }
+    .gallery__img {
+        @apply w-fit
+    }
+    .gallery__item {
+        @apply cursor-pointer hover:bg-terciary hover:text-white;
+    }
+    .gallery__item.active{
+        @apply bg-accent text-white ;
+    }
+    .gallery__item{
+        @apply inline-block pt-4 relative overflow-hidden z-[1] duration-300 bg-terciary
+    }
+    .gallery__item::before{
+        @apply content-['_'] absolute left-0 top-0 w-full h-full
+        bg-accent -translate-x-full -z-50 duration-700 text-white
+    }
+    .gallery__item:hover::before{
+        @apply translate-x-0 text-white
+    }
+
+ 
 }
 
 @layer components {

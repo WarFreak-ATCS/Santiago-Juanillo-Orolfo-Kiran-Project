@@ -1,9 +1,23 @@
-const card = document.querySelector('.sponsor__item');
-const hover = document.querySelector('.sponsor__hover');
+const cards = document.querySelectorAll('.sponsor__card');
+const hovers = document.querySelectorAll('.sponsor__card--hover');
+cards.forEach((card) => {
+    card.addEventListener("mouseover", () => {
+        addHover();
+    });
 
-card.addEventListener("mouseover", () => {
-hover.classList.add("open");
+    card.addEventListener("mouseleave", () => {
+        removeHover();
+    });
 });
-card.addEventListener("mouseleave", () => {
-hover.classList.remove("open");
-});
+
+function addHover() {
+    hovers.forEach((hover) => {
+        hover.classList.add("hover");
+    });
+}
+
+function removeHover() {
+    hovers.forEach((hover) => {
+        hover.classList.remove("hover");
+    }); 
+}
